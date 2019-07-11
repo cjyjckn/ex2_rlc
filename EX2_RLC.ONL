@@ -1,0 +1,176 @@
+(PCB EX2_RLC
+ (description
+  (timeStamp "2019 07 10 02 51 32")
+  (program "CAPTURE.EXE" (Version "17.2-2016 - D"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "Wednesday, July 10, 2019")
+  (document "C:\\USERS\\USER\\DESKTOP\\WORK\\EX2_RLC\\EX2_RLC.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component R
+   (place R1
+    (property 
+     (Price 4)
+     (timestamp 00000024)
+     ("Source Package" R)
+     (Value 330)
+     ("PCB Footprint" RES400)))
+   (place R2
+    (property 
+     (Price 4)
+     (timestamp 000000A0)
+     ("Source Package" R)
+     (Value 330)
+     ("PCB Footprint" RES400))))
+  (component CON2
+   (place J1
+    (property 
+     (Price 170)
+     (timestamp 000001A7)
+     ("Source Package" CON2)
+     (Value CON2)
+     ("PCB Footprint" JUMPER2))))
+  (component "CAP NP"
+   (place C1
+    (property 
+     (Price 8)
+     (timestamp 00000075)
+     ("Source Package" "CAP NP")
+     (Value 1u)
+     ("PCB Footprint" CAP196))))
+  (component INDUCTOR
+   (place L1
+    (property 
+     (Price 350)
+     (timestamp 00000056)
+     ("Source Package" INDUCTOR)
+     (Value 100n)
+     ("PCB Footprint" SMDRES)))))
+ (library
+  (image R
+   (property 
+    (sourcelib C:\\CADENCE\\SPB_17.2\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00094)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image INDUCTOR
+   (property 
+    (sourcelib C:\\CADENCE\\SPB_17.2\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00094)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00125)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image "CAP NP"
+   (property 
+    (sourcelib C:\\CADENCE\\SPB_17.2\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N00125)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image CON2
+   (property 
+    (sourcelib C:\\CADENCE\\SPB_17.2\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False)))))
+ (network
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     C1-1 R2-2 J1-2))
+  (net N00094
+   (pins
+     R1-1 L1-1))
+  (net N00125
+   (pins
+     L1-2 C1-2 R2-1))
+  (net VCC
+    (property 
+     (nettype S))
+   (pins
+     R1-2 J1-1)))
+)

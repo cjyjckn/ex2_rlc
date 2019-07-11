@@ -1,0 +1,30 @@
+(netlist "C:\USERS\USER\DESKTOP\WORK\EX2_RLC\EX2_RLC.DSN"
+  (compinst "C1"
+    (patternName "CAP196")
+    (compvalue "1u"))
+  (compinst "J1"
+    (patternName "JUMPER2")
+    (compvalue "CON2"))
+  (compinst "L1"
+    (patternName "SMDRES")
+    (compvalue "100n"))
+  (compinst "R1"
+    (patternName "RES400")
+    (compvalue "330"))
+  (compinst "R2"
+    (patternName "RES400")
+    (compvalue "330"))
+  (net "GND"
+    (node "C1" "1")
+    (node "R2" "2")
+    (node "J1" "2"))
+  (net "N00094"
+    (node "R1" "1")
+    (node "L1" "1"))
+  (net "N00125"
+    (node "L1" "2")
+    (node "C1" "2")
+    (node "R2" "1"))
+  (net "VCC"
+    (node "R1" "2")
+    (node "J1" "1")))
